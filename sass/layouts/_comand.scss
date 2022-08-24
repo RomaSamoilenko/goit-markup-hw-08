@@ -1,0 +1,86 @@
+.comand {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: rgba(245, 244, 250, 1);
+}
+
+.comand-title {
+    @include font(700, 36, 42, 0.03em);
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: calc(42/36);
+    text-align: center;
+    // letter-spacing: 0.03em;
+    color: var(--first-title-color--);
+    margin-bottom: 50px;
+}
+
+.comand-subtitle {
+    @include font(500, 16, 19, 0.03em);
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: calc(19/16);
+    text-align: center;
+    // letter-spacing: 0.03em;
+    color: var(--first-title-color--);
+    margin-bottom: 10px;
+}
+
+.comand-text {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.comand-item {
+    display: flex;
+    column-gap: 30px;
+}
+
+.comand-list {
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+.comand-about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.comand-soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.comand-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+        &:hover {
+            background-color: var(--acent-color--);
+        }
+}
+
+.comand-soc-icon {
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .comand-soc-link:focus,
+        .comand-soc-link:hover & {
+            fill: #fff;
+        }
+}
+
+
+

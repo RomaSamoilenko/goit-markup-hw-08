@@ -1,0 +1,42 @@
+.work {
+    padding-bottom: 94px;
+}
+
+.work__item {
+    display: flex;
+    gap: 30px;
+    width: 1170px;
+}
+
+.work__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--first-title-color--);
+    margin-bottom: 50px;
+}
+
+.work__box {
+    position: relative;
+}
+
+.work__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

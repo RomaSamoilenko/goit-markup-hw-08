@@ -1,0 +1,37 @@
+.content {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.content-title {
+    @include font(700, 14, 16,0.03em);
+        // font-weight: 700;
+        // font-size: 14px;
+        // line-height: calc(16/14);
+        // letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--first-title-color--);
+    margin-bottom: 10px;
+}
+
+.content-text {
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+}
+
+.content-item {
+    display: flex;
+    gap: 30px;
+}
+
+
+.content-bg {
+    width: 270px;
+    height: 120px;
+    background-color: rgba(245, 244, 250, 1);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
