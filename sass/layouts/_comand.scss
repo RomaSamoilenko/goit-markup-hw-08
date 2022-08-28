@@ -1,7 +1,11 @@
 .comand {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: rgba(245, 244, 250, 1);
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .comand-title {
@@ -13,6 +17,7 @@
     // letter-spacing: 0.03em;
     color: var(--first-title-color--);
     margin-bottom: 50px;
+    
 }
 
 .comand-subtitle {
@@ -36,7 +41,10 @@
 
 .comand-item {
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    // column-gap: 30px;
+    gap: 30px;
+    
 }
 
 .comand-list {
@@ -45,6 +53,14 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+         @media screen and (min-width: 1200px) {
+             width: calc((100% - 90px) / 4);
+
+         }
 }
 
 

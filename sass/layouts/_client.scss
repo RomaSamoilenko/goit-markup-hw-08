@@ -1,6 +1,10 @@
 .client {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .client-title {
@@ -16,12 +20,31 @@
 
 .client-item {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+
+    
+}
+
+
+.ckient-soc-item{ 
+
+
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 90px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 180px) / 6);
+
+    }
+
 }
 
 .client-logo-link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -35,6 +58,15 @@
             color: rgba(33, 150, 243, 1);
             border-color: var(--acent-color--);
         }
+
+                @media screen and (min-width: 768px) {
+                    width: 226px;
+                }
+        
+                @media screen and (min-width: 1200px) {
+                    width: 170px;
+                }
+
 }
 
 .client-icon {
