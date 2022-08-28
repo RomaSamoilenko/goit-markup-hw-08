@@ -23,12 +23,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-
     
 }
 
 
-.ckient-soc-item{ 
+.ckient-soc-item{ width: calc((100% - 30px) / 2);
 
 
 
@@ -44,7 +43,7 @@
 }
 
 .client-logo-link {
-    width: 210px;
+    max-width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;

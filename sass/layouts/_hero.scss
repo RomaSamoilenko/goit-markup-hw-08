@@ -10,14 +10,19 @@
 
 .hero-title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60/44);
+    font-size: 26px;
+    line-height: calc(42 / 26);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--second-btn-color--);
     margin: 0 auto 30px;
-    width: 696px;
+    max-width: 360px;
+    @media screen and (min-width: 1200px){
+        font-size: 44px;
+        line-height: calc(60 / 44);
+        width: 696px;
+    }
 }
 
 .hero-btn {
@@ -33,6 +38,7 @@
     margin: 0 auto;
     border: 0px;
     cursor: pointer;
-    padding: 10px 32px;
+    width: 200px;
+    height: 50px;
     border-radius: 4px;
 }

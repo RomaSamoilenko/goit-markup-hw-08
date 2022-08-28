@@ -395,14 +395,21 @@ body {
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-btn-color--);
   margin: 0 auto 30px;
-  width: 696px;
+  max-width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.3636363636;
+    width: 696px;
+  }
 }
 
 .hero-btn {
@@ -418,7 +425,8 @@ body {
   margin: 0 auto;
   border: 0px;
   cursor: pointer;
-  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
   border-radius: 4px;
 }
 
@@ -473,7 +481,7 @@ body {
 }
 
 .content-bg {
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-color: rgb(245, 244, 250);
   margin-bottom: 30px;
@@ -493,7 +501,13 @@ body {
 }
 
 .work {
+  display: none;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .work__item {
@@ -658,6 +672,9 @@ body {
   gap: 30px;
 }
 
+.ckient-soc-item {
+  width: calc((100% - 30px) / 2);
+}
 @media screen and (min-width: 768px) {
   .ckient-soc-item {
     width: calc((100% - 90px) / 3);
@@ -670,7 +687,7 @@ body {
 }
 
 .client-logo-link {
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -705,9 +722,15 @@ body {
   padding-bottom: 60px;
 }
 
+.cont {
+  display: block;
+  margin: 0 auto;
+}
+
 .footer__logo {
   display: flex;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .footer__logo {
@@ -736,6 +759,10 @@ body {
 .footer__link :focus, .footer__link :hover {
   color: var(--acent-color--);
   cursor: pointer;
+}
+
+.footer__item {
+  text-align: center;
 }
 
 .footer__item:not(:last-child) {
