@@ -1,8 +1,10 @@
 .portfolio__btn-item {
     display: flex;
+    flex-wrap: wrap;
+    // align-content: start;
     gap: 8px;
-    justify-content: center;
     margin-bottom: 50px;
+    @media screen and (min-width: 768px){justify-content: center;}
 }
 
 .portfolio__btn-list {
@@ -49,14 +51,28 @@
 }
 
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+            margin-top: 94px;
+            margin-bottom: 94px;
+        }
 }
 
 .portfolio__item {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
+}
+.portfolio__list{
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+                @media screen and (min-width: 1200px) {
+                    width: calc((100% - 60px) / 3);
+        
+                }
 }
 
 .portfolio__about {

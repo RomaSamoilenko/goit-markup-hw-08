@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="conteiner">
         <nav class="navigetion">
           <a href="./index.html" class="navigetion__logo link"
@@ -63,13 +63,13 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="portfolio">
         <div class="conteiner">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="portfolio__btn-item list">
-            <li>
+            <li class="portfolio__btn-grup">
               <button type="button" class="portfolio__btn-list">Все</button>
             </li>
             <li>
@@ -77,17 +77,17 @@
                 Веб-сайты
               </button>
             </li>
-            <li>
+            <li class="portfolio__btn-grup">
               <button type="button" class="portfolio__btn-list">
                 Приложенияе
               </button>
             </li>
-            <li>
+            <li class="portfolio__btn-grup">
               <button type="button" class="portfolio__btn-list">
                 Приложения
               </button>
             </li>
-            <li>
+            <li class="portfolio__btn-grup">
               <button type="button" class="portfolio__btn-list">
                 Маркетинг
               </button>
@@ -299,65 +299,67 @@
     </main>
     <footer class="footer">
       <div class="conteiner">
-        <div class="cont">
-          <a href="./index.html" class="footer__logo link"
-            ><span class="footer__logo-acent">Web</span>Studio</a
-          >
-          <address class="contacts">
-            <ul class="footer__link list">
-              <li class="footer__item">
-                <a
-                  href="https://goo.gl/maps/eJnzdVW8tuNHDkBv5"
-                  class="footer__link link"
-                  rel="noopener noreferer nofollow"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer__wrap">
+          <div class="cont">
+            <a href="./index.html" class="footer__logo link"
+              ><span class="footer__logo-acent">Web</span>Studio</a
+            >
+            <address class="contacts">
+              <ul class="footer__link list">
+                <li class="footer__item">
+                  <a
+                    href="https://goo.gl/maps/eJnzdVW8tuNHDkBv5"
+                    class="footer__maps link"
+                    rel="noopener noreferer nofollow"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:info@devstudio.com" class="footer__link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+380961111111" class="footer__link link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <h2 class="join__title">присоединяйтесь</h2>
+            <ul class="join__soc list">
+              <li class="join__soc-item">
+                <a href="" class="join__soc-link link">
+                  <svg class="join__soc-icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a href="mailto:info@devstudio.com" class="footer__link link"
-                  >info@devstudio.com</a
-                >
+              <li class="join__-soc-item">
+                <a href="" class="join__soc-link link">
+                  <svg class="join__soc-icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a href="tel:+380961111111" class="footer__link link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="join__soc-item">
+                <a href="" class="join__soc-link link">
+                  <svg class="join__soc-icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__soc-item">
+                <a href="" class="join__soc-link link">
+                  <svg class="join__soc-icon" width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <h2 class="join__title">присоединяйтесь</h2>
-          <ul class="join__soc list">
-            <li class="join__soc-item">
-              <a href="" class="join__soc-link link">
-                <svg class="join__soc-icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__-soc-item">
-              <a href="" class="join__soc-link link">
-                <svg class="join__soc-icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__soc-item">
-              <a href="" class="join__soc-link link">
-                <svg class="join__soc-icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__soc-item">
-              <a href="" class="join__soc-link link">
-                <svg class="join__soc-icon" width="20" height="20">
-                  <use href="./img/symbol-defs.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="send">
           <p class="send__title">Подпишитесь на рассылку</p>
