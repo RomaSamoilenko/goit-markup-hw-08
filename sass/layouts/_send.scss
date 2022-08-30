@@ -4,7 +4,13 @@
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
-    margin-left: 93px;
+    // ;
+    margin-top: 60px;
+    align-items: center;
+    @media screen and (min-width: 1200px){
+        margin-left: 93px;
+        align-items: baseline;
+    }
 }
 
 .send__title {
@@ -18,10 +24,11 @@
 }
 
 .send__imp {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-
+    @media screen and (min-width: 1200px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
 }
 
 .send__email {
@@ -31,8 +38,13 @@
     border-radius: 4px;
     background-color: transparent;
     color: #FFFFFF;
-    margin-right: 12px;
+    @media screen and (min-width: 1200px){
+margin-right: 12px;
     padding-left: 10px;
+    align-items:baseline ;
+    }
+    
+    align-items: center;
     &::placeholder {
             font-weight: 400;
             font-size: 16px;
@@ -66,6 +78,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    @media screen and (min-width: 1200px){
+        margin-top: 0;
+    }
 
 }
 

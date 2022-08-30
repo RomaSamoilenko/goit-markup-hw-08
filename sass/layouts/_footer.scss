@@ -9,12 +9,18 @@
 
 .cont{display: block;
     margin: 0 auto;
+    @media screen and (min-width: 768px){
+        width: calc(50% - 15px);
+    }
 }
 
 .footer__logo {
     display: flex;
     margin-bottom: 20px;
     justify-content: center;
+    @media screen and (min-width: 1200px){
+        justify-content: left;
+    }
     
     
 }
@@ -48,7 +54,12 @@
             cursor: pointer;
         }
 }
-.footer__item{text-align: center;}
+.footer__item{
+    text-align: center;
+    @media screen and (min-width: 1200px){
+        text-align: left;
+    }
+}
 
 .footer__item:not(:last-child) {
     margin-bottom: 9px;
@@ -56,5 +67,15 @@
 }
 
 .footer .conteiner {
-    display: flex;
+    @media screen and (min-width: 1200px){
+        display: flex;
+    }
+    
+}
+
+.footer__wrap{
+    @media screen and (min-width: 768px){
+        display: flex;
+        
+    }
 }

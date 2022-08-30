@@ -726,11 +726,21 @@ body {
   display: block;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .cont {
+    width: calc(50% - 15px);
+  }
+}
 
 .footer__logo {
   display: flex;
   margin-bottom: 20px;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    justify-content: left;
+  }
 }
 
 .footer__logo {
@@ -764,13 +774,26 @@ body {
 .footer__item {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__item {
+    text-align: left;
+  }
+}
 
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer .conteiner {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer .conteiner {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    display: flex;
+  }
 }
 
 .join {
@@ -779,7 +802,18 @@ body {
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
-  margin-left: 70px;
+  margin-top: 60px;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .join {
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+  }
 }
 
 .join__soc {
@@ -821,7 +855,14 @@ body {
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
-  margin-left: 93px;
+  margin-top: 60px;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .send {
+    margin-left: 93px;
+    align-items: baseline;
+  }
 }
 
 .send__title {
@@ -834,10 +875,12 @@ body {
   margin-bottom: 20px;
 }
 
-.send__imp {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+@media screen and (min-width: 1200px) {
+  .send__imp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
 }
 
 .send__email {
@@ -847,8 +890,14 @@ body {
   border-radius: 4px;
   background-color: transparent;
   color: #FFFFFF;
-  margin-right: 12px;
-  padding-left: 10px;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .send__email {
+    margin-right: 12px;
+    padding-left: 10px;
+    align-items: baseline;
+  }
 }
 .send__email::placeholder {
   font-weight: 400;
@@ -880,6 +929,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .send__btn {
+    margin-top: 0;
+  }
 }
 
 .send__svg {
