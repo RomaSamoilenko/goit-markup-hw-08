@@ -2,13 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: baseline;
+    // align-items: baseline;
     justify-content: center;
-    // ;
     margin-top: 60px;
     align-items: center;
+    
     @media screen and (min-width: 1200px){
         margin-left: 93px;
+        margin-top: 0;
         align-items: baseline;
     }
 }
@@ -38,11 +39,7 @@
     border-radius: 4px;
     background-color: transparent;
     color: #FFFFFF;
-    @media screen and (min-width: 1200px){
-margin-right: 12px;
-    padding-left: 10px;
-    align-items:baseline ;
-    }
+   
     
     align-items: center;
     &::placeholder {
@@ -55,6 +52,12 @@ margin-right: 12px;
             color: rgba(255, 255, 255, 0.6);
             padding: 16px;
         }
+                 @media screen and (min-width: 1200px) {
+                     margin-right: 12px;
+                     padding-left: 10px;
+                     align-items: baseline;
+        
+                 }
 }
 
 
