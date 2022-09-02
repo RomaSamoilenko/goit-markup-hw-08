@@ -26,7 +26,7 @@
 }
 
 .navigetion__list {
-    display: flex;
+    display: none;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus,
@@ -38,7 +38,7 @@
 
 
 .connect {
-    display: flex;
+    display: none;
     margin-left: auto;
     align-items: center;
     gap: 50px;
@@ -123,4 +123,128 @@
 }
 
 
+.menu-open{
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            fill: var(--acent-color--);
+        }
 
+}
+
+
+.mob-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        fill: var(--acent-color--);
+    }
+}
+
+
+.mob-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    top: 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    >.conteiner{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+.close-svg {}
+
+.mob-nav {}
+
+.mob-nav-list {
+    font-weight: 500;
+        font-size: 40px;
+        line-height: calc(47 / 40);
+        letter-spacing: 0.02em;
+        color: #212121;
+        
+        
+
+}
+
+
+
+.mob-nav-link :not(:last-child) {
+    margin-bottom: 32px;
+}
+
+
+
+
+
+.mob-connect {}
+
+.mob-connect-tel {font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+    
+}
+
+.mob-connect-email {
+    font-weight: 500;
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        letter-spacing: 0.02em;
+        color: #757575;
+
+}
+
+.mob-connect :not(:last-child){
+    margin-bottom: 32px;
+}
+
+.mob-soc{
+    display: flex;
+    margin-top: 64px;
+    gap: 10px;
+}
+
+.mob-soc-link :not(:last-child){
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-soc-link  {
+    font-weight: 500;
+        font-size: 18px;
+        line-height: calc(22 / 18);
+        letter-spacing: 0.02em;
+        color: #2196F3;
+        
+}
