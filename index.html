@@ -71,17 +71,18 @@
         </button>
       </div>
 
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden">
         <div class="conteiner">
+          <button type="button" class="mob-close">
+            <svg width="19" height="19">
+              <use
+                class="close-svg"
+                href="./img/symbol-defs.svg#icon-close-black"
+              ></use>
+            </svg>
+          </button>
+
           <div class="mob-menu-top">
-            <button type="button" class="mob-close">
-              <svg width="19" height="19">
-                <use
-                  class="close-svg"
-                  href="./img/symbol-defs.svg#icon-close-black"
-                ></use>
-              </svg>
-            </button>
             <nav class="mob-nav">
               <ul class="mob-nav-link list">
                 <li class="mob-nav-item">
@@ -669,5 +670,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
