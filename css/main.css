@@ -453,7 +453,7 @@ body {
 .mob-close {
   position: absolute;
   right: 15px;
-  top: 10px;
+  top: 25px;
   width: 40px;
   height: 40px;
   border: 0;
@@ -462,6 +462,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translate(-50%, -50%) scale(1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-close:hover {
@@ -474,10 +475,11 @@ body {
   height: 100vh;
   background-color: #ffffff;
   top: 0;
+  z-index: 2;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-menu:hover {
   fill: var(--acent-color--);
@@ -542,6 +544,10 @@ body {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+.current-mob {
+  color: var(--acent-color--);
 }
 
 .hero {
@@ -638,6 +644,11 @@ body {
   color: var(--first-title-color--);
   margin-bottom: 10px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .content-title {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1200px) {
   .content-title {
@@ -1197,8 +1208,14 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
